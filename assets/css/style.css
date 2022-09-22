@@ -124,11 +124,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color:white;
-  border: 2px solid #ffb727;
-  border-radius: 4px 8px;
-  background-color: #ffb727;
-  font-weight: bold;
+  color: #ffb727;
 }
 
 .navbar .dropdown ul {
@@ -167,8 +163,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: white;
- 
+  color: #ffb727;
 }
 
 .navbar .dropdown:hover>ul {
@@ -265,6 +260,7 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #ffb727;
+
 }
 
 .navbar-mobile .getstarted,
@@ -310,29 +306,33 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background-image: url(../img/Picsart_22-09-21_14-08-27-216.jpg) ; 
-  background-repeat: no-repeat;
-  background-size: cover; 
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-position:top;
-  background-color: black;
+  background: url("../img/Picsart_22-09-21_14-08-27-216.jpg") top right;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.typed-out{
+  text-align: center;
+  color: #fff;
+  font-size: larger;
+  text-transform: uppercase;
 }
 
 #nisha{
-  padding: 4px 22px;
-  border-radius: 20px;
-  background-color: midnightblue;
-  color: white;
-  margin-top: 20px;
-  outline: 2px solid white;
-  font-size: 13px;
+  background-color:#f3a200;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 13px;
+  margin: 20px 0;
+  font-weight: bold;
 }
 
 #nisha:hover{
-  background-color:#ffb727 ;
-  color: black;
-  outline: 2px solid black;
+  background-color: rgb(60, 60, 124);
+  color: white;
 }
 
 #hero:before {
@@ -343,8 +343,6 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  height: 800px;
 }
 
 #hero .hero-container {
@@ -367,25 +365,13 @@ h6 {
   color: #fff;
 }
 
-.container{
-  display: inline-block;
-}
-.typed-out{
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  animation: 
-  typing 3s steps(20, end) forwards;
-  font-size: 1.5rem;
-  width: 0;
-  color: white;
-  text-transform: capitalize;
-  margin: 0 380px;
-  font-style: italic;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 40% }
+#hero h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 #hero .btn-scroll {
@@ -562,9 +548,6 @@ section {
 /*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
-#about{
-  margin: 0 70px;
-}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -647,6 +630,10 @@ section {
   min-height: 500px;
 }
 
+.section-title{
+  font-style: italic;
+}
+
 .about .skills-content {
   margin-top: 30px;
 }
@@ -674,7 +661,7 @@ section {
 }
 
 .about .skills-content .progress-bar-wrap {
-  background: white;
+  background: #e6e8eb;
 }
 
 .about .skills-content .progress-bar {
@@ -687,18 +674,16 @@ section {
 /*--------------------------------------------------------------
 # My Resume
 --------------------------------------------------------------*/
-.resume p{
-  color: #c5bebe;
+#section-title h3{
+  color: white;
 }
 
-#section-title h2{
-  color:#ffb727;
-  text-align: center;
+#monkey{
+  color: #e3dddd;
 }
+
 #resume{
   background-color: #111;
-  color: white;
- padding: 0 90px;
 }
 .resume .resume-title {
   font-size: 26px;
@@ -706,8 +691,6 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   color:white;
-  /* background-color: midnightblue; */
-  padding: 0 20px;
 }
 
 .resume .resume-item {
@@ -715,11 +698,12 @@ section {
   margin-top: -2px;
   border-left: 2px solid #82909c;
   position: relative;
+  color:#e3dddd;
 }
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffb727;
@@ -727,23 +711,23 @@ section {
 }
 
 .resume .resume-item h5 {
-  font-size: 13px;
-  background: midnightblue;
-  color: rgb(236, 226, 226);
-  font-weight: bolder;
-  padding: 3px 15px;
+  font-size: 14px;
+  background-color: rgb(60, 60, 124);
+  color: white;
+  border-radius: 9px;
+  padding: 5px 15px;
   display: inline-block;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .resume .resume-item ul {
   padding-left: 20px;
-  color: #c5bebe;
+  
 }
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
-  color: #c5bebe;
 }
 
 .resume .resume-item:last-child {
@@ -765,9 +749,7 @@ section {
 /*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
-#services{
-  margin: 0 100px;
-}
+
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -777,7 +759,6 @@ section {
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #fff;
-  cursor: pointer;
 }
 
 .services .icon {
@@ -801,42 +782,32 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
-  
 }
 
 .services .title a {
   color: #111;
   transition: 0.3s;
-  
 }
 
 .services .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
- 
 }
 
 .services .icon-box:hover {
-  background-color: black;
-  color: white;
+  color:white;
+  background-color: #111;
+  cursor: pointer;
 }
 
 .services .icon-box:hover .title a {
   color: #ffb727;
 }
+
 /*--------------------------------------------------------------
 # My Portfolio
 --------------------------------------------------------------*/
-#portfolio{
-  background-color: black;
-  padding: 0 100px;
-}
-
-#section-title h2{
-  color: white;
-  margin: 20px 0;
-}
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -851,7 +822,7 @@ section {
   line-height: 1;
   padding: 7px 10px;
   text-transform: uppercase;
-  color:white;
+  color: #444444;
   transition: all 0.3s ease-in-out;
   border: 2px solid #fff;
 }
@@ -930,6 +901,17 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+.container h2{
+  color: white;
+}
+
+#portfolio{
+  background-color: #111;
+}
+
+.portfolio #portfolio-flters li{
+  color: white;
+}
 .portfolio-details {
   padding-top: 40px;
 }
@@ -947,6 +929,7 @@ section {
   width: 12px;
   height: 12px;
   background-color: #fff;
+  
   opacity: 1;
   border: 1px solid #ffb727;
 }
@@ -965,6 +948,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  
   border-bottom: 1px solid #eee;
 }
 
@@ -972,10 +956,12 @@ section {
   list-style: none;
   padding: 0;
   font-size: 15px;
+
 }
 
 .portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
+ 
 }
 
 .portfolio-details .portfolio-description {
@@ -991,14 +977,21 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
 /*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
-#contact{
-  margin: 0 100px;
+.section-title h2{
+  color: white;
 }
+
+#contact{
+  background-color: #111;
+  color: white;
+}
+
 .contact .info-box {
-  color: #444444;
+  color:white;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
@@ -1006,7 +999,7 @@ section {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color:midnightblue;
+  color: #ffb727;
   border-radius: 50%;
   padding: 15px;
   background: #fff6e4;
@@ -1014,9 +1007,10 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color:white;
   font-weight: 700;
   margin: 10px 0;
+ 
 }
 
 .contact .info-box p {
@@ -1030,24 +1024,26 @@ section {
   margin-top: 15px;
   display: flex;
   justify-content: center;
+ 
 }
 
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  color:white;
+  color: #687683;
   line-height: 1;
   margin: 0 8px;
   transition: 0.3s;
   padding: 14px;
   border-radius: 50px;
-  border: 1px solid #dde1e4;
-  background-color:midnightblue;
+  border: 1px solid #ffb727;
+  background-color: #ffb727;
 }
 
 .contact .social-links a:hover {
   color: #fff;
-  background:#ffb727;
+  border-color: #ffb727;
+  background: #ffb727;
 }
 
 .contact .php-email-form {
@@ -1057,7 +1053,6 @@ section {
 
 .contact .php-email-form .validate {
   display: none;
-  color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1126,17 +1121,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: midnightblue;
+  background: #ffb727;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color:#687683;
   transition: 0.4s;
   border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background:#ffb727;
-  color: white;
+  background: #ffc85a;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1163,6 +1157,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+  background: url("../img/footer-bg.jpg") top center no-repeat;
   background-color: #111;
   background-size: cover;
   color: #fff;
@@ -1211,7 +1206,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #ffb727;
-  color: #fff;
+  color:#687683;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1223,7 +1218,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background:darkblue;
+  background: #f3a200;
   color: #fff;
   text-decoration: none;
 }
