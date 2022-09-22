@@ -548,6 +548,9 @@ section {
 /*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
+.about .container .section-title h2{
+  color: black;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -749,7 +752,9 @@ section {
 /*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
-
+.services .container .section-title h2{
+  color: black;
+}
 .services .icon-box {
   padding: 30px;
   position: relative;
